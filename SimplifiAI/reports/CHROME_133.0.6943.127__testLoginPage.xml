@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="9"
+            failures="1"
+            tests="5">
+
+  <testsuite name="testLoginPage"
+    errors="9" failures="1" hostname="" id="" package="testLoginPage" skipped="0"
+    tests="5" time="211.6" timestamp="">
+  
+    <testcase name="Checking if input fields are visible" classname="testLoginPage" time="9.345" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Attempting login with empty fields" classname="testLoginPage" time="2.527" assertions="0">
+    </testcase>
+  
+    <testcase name="Attempting login with an invalid email" classname="testLoginPage" time="4.283" assertions="0">
+    </testcase>
+  
+    <testcase name="Attempting login with incorrect credentials" classname="testLoginPage" time="2.070" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Attempting successful login" classname="testLoginPage" time="87.57" assertions="3">
+
+    
+
+      <failure message="Timed out while waiting for element &lt;//small[text()=&#39;Employee Name&#39;]/following-sibling::p&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5084ms)">    at Attempting successful login (C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:91:12)</failure>
+<system-out>[[ATTACHMENT|C:\Users\testuser\AutomationTesting\reports\ss\testLoginPage\Attempting-successful-login_FAILED_Feb-25-2025-195313-GMT+0530.png]]</system-out>
+    
+    <error message="Timed out while waiting for element &lt;//small[text()=&#39;Employee Name&#39;]/following-sibling::p&gt; to be present for 5000 milliseconds. - expected [32m&#34;visible&#34;[39m but got: [31m&#34;not found&#34;[39m [90m(5084ms)[39m" type="error"><![CDATA[
+    Error
+    at Attempting successful login (C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:91:12)
+    at Context.call (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\context.js:528:43)
+    at TestCase.run (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+    at Runnable.__runFn (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\index.js:839:80)
+    at Runnable.run (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.executeRunnable (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\index.js:1000:49)
+    at TestSuite.handleRunnable (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\index.js:1015:33)
+    at C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\index.js:839:21
+    at async DefaultRunner.runTestSuite (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\runner\test-runners\default.js:83:7)
+    at async DefaultRunner.promiseFn (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\runner\test-runners\default.js:101:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .click() command on &lt;//a[text()=&#39;Back&#39;]&gt;: Timed out while waiting for element &#34;//a[text()=&#39;Back&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:78
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     76 |           .click(viewpage.viewprofile)
+     77 |           .pause(5000) 
+     78 |           .click(viewpage.viewBack) 
+     79 |           .click(xpaths.Lcpmenu)
+     80 |           //Add Employee Details
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;//a[@href=&#39;/employee/newemployee/add&#39;]&gt;: Timed out while waiting for element &#34;//a[@href=&#39;/employee/newemployee/add&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:82
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     80 |           //Add Employee Details
+     81 |           .click(editProfilebutton.employeeXpath)
+     82 |           .click(editProfilebutton.addEmployee) 
+     83 |           .setValue(editProfilebutton.employeeName,&#39;Saranya Ramesh&#39;)
+     84 |           .setValue(editProfilebutton.employeeRoledrpdown,&#39;Admin,Employee,Project Manager,CRM&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;//input[@placeholder=&#39;Employee Name&#39;]&gt;: Timed out while waiting for element &#34;//input[@placeholder=&#39;Employee Name&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:83
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     81 |           .click(editProfilebutton.employeeXpath)
+     82 |           .click(editProfilebutton.addEmployee)
+     83 |           .setValue(editProfilebutton.employeeName,&#39;Saranya Ramesh&#39;) 
+     84 |           .setValue(editProfilebutton.employeeRoledrpdown,&#39;Admin,Employee,Project Manager,CRM&#39;)
+     85 |           .setValue(editProfilebutton.employeeNo,7)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;//div[@class=&#39;css-w6jo55&#39;]&gt;: Timed out while waiting for element &#34;//div[@class=&#39;css-w6jo55&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:84
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     82 |           .click(editProfilebutton.addEmployee)
+     83 |           .setValue(editProfilebutton.employeeName,&#39;Saranya Ramesh&#39;)
+     84 |           .setValue(editProfilebutton.employeeRoledrpdown,&#39;Admin,Employee,Project Manager,CRM&#39;) 
+     85 |           .setValue(editProfilebutton.employeeNo,7)
+     86 |           .setValue(editProfilebutton.address,&#39;53,Narayana Palayam Street&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;//input[@placeholder=&#39;Enter your Employee No&#39;]&gt;: Timed out while waiting for element &#34;//input[@placeholder=&#39;Enter your Employee No&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:85
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     83 |           .setValue(editProfilebutton.employeeName,&#39;Saranya Ramesh&#39;)
+     84 |           .setValue(editProfilebutton.employeeRoledrpdown,&#39;Admin,Employee,Project Manager,CRM&#39;)
+     85 |           .setValue(editProfilebutton.employeeNo,7) 
+     86 |           .setValue(editProfilebutton.address,&#39;53,Narayana Palayam Street&#39;)
+     87 |           .setValue(editProfilebutton.Phone, &#39;7806857271&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;//input[@placeholder=&#39;Enter your Address&#39;]&gt;: Timed out while waiting for element &#34;//input[@placeholder=&#39;Enter your Address&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:86
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     84 |           .setValue(editProfilebutton.employeeRoledrpdown,&#39;Admin,Employee,Project Manager,CRM&#39;)
+     85 |           .setValue(editProfilebutton.employeeNo,7)
+     86 |           .setValue(editProfilebutton.address,&#39;53,Narayana Palayam Street&#39;) 
+     87 |           .setValue(editProfilebutton.Phone, &#39;7806857271&#39;)
+     88 |           .setValue(editProfilebutton.email,&#39;saranya@gmail.com&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;//input[@value=&#39;+91&#39;]&gt;: Timed out while waiting for element &#34;//input[@value=&#39;+91&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:87
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     85 |           .setValue(editProfilebutton.employeeNo,7)
+     86 |           .setValue(editProfilebutton.address,&#39;53,Narayana Palayam Street&#39;)
+     87 |           .setValue(editProfilebutton.Phone, &#39;7806857271&#39;) 
+     88 |           .setValue(editProfilebutton.email,&#39;saranya@gmail.com&#39;)
+     89 |           .setValue(viewEmployee.searchEmployee,&#39;7&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .setValue() command on &lt;//input[@placeholder=&#39;Enter your Email&#39;]&gt;: Timed out while waiting for element &#34;//input[@placeholder=&#39;Enter your Email&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:88
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     86 |           .setValue(editProfilebutton.address,&#39;53,Narayana Palayam Street&#39;)
+     87 |           .setValue(editProfilebutton.Phone, &#39;7806857271&#39;)
+     88 |           .setValue(editProfilebutton.email,&#39;saranya@gmail.com&#39;) 
+     89 |           .setValue(viewEmployee.searchEmployee,&#39;7&#39;)
+     90 |           .click(editProfilebutton.infoEmplyee)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;//a[@class=&#39;flex size-6 items-center justify-center rounded-full bg-primary text-white hover:bg-white hover:text-primary&#39;]&gt;: Timed out while waiting for element &#34;//a[@class=&#39;flex size-6 items-center justify-center rounded-full bg-primary text-white hover:bg-white hover:text-primary&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\testLoginPage.js:90
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     88 |           .setValue(editProfilebutton.email,&#39;saranya@gmail.com&#39;)
+     89 |           .setValue(viewEmployee.searchEmployee,&#39;7&#39;)
+     90 |           .click(editProfilebutton.infoEmplyee) 
+     91 |           .waitForElementVisible(viewEmployee.getName, 5000)
+     92 |           .getText(viewEmployee.getName, function(result) {
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

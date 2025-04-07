@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="LCP_Testing.LoginTestcaseWithReports.LoginPage"
+    errors="0" failures="0" hostname="" id="" package="LoginTestcaseWithReports" skipped="0"
+    tests="2" time="63.79" timestamp="">
+  
+    <testcase name="Open Url" classname="LCP_Testing.LoginTestcaseWithReports.LoginPage" time="9.199" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Login Test Cases" classname="LCP_Testing.LoginTestcaseWithReports.LoginPage" time="22.70" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,21 @@
+{
+  "test_settings": {
+    "default": {
+      "output_folder": "testreports",
+      "report_prefix": "LCP Reports",
+      "globals": {
+        "reporter": "junit"
+      },
+      "reporter": "nightwatch-html-reporter",
+      "custom_reporter": {
+        "reportsDirectory": "testreports/nightwatch-html-report",
+        "reportFilename": "index.html",
+        "openBrowser": false,
+        "themeName": "default",
+        "reportTitle": "LCP Automation Test Report"
+      }
+    }
+  }
+}
+
+  

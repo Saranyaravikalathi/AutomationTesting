@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="6">
+
+  <testsuite name="LCP_Testing.testLCP"
+    errors="0" failures="1" hostname="" id="" package="LCP_Testing" skipped="7"
+    tests="6" time="72.58" timestamp="">
+  
+    <testcase name="Checking if input fields are visible" classname="LCP_Testing.testLCP" time="9.304" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Attempting login with empty fields" classname="LCP_Testing.testLCP" time="2.325" assertions="0">
+    </testcase>
+  
+    <testcase name="Attempting login with an invalid email" classname="LCP_Testing.testLCP" time="3.599" assertions="0">
+    </testcase>
+  
+    <testcase name="Attempting login with incorrect credentials" classname="LCP_Testing.testLCP" time="1.702" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Attempting successful login" classname="LCP_Testing.testLCP" time="1.141" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="View Profile Automation" classname="LCP_Testing.testLCP" time="18.21" assertions="3">
+
+    
+
+      <failure message="Testing if element &lt;(//small[@class=&#39;font-semibold text-dark dark:text-white&#39;]//following-sibling::p)[3]&gt; contains text &#39;Admin, Employee, HiringManager, InterviewPanel&#39; in 5000ms - expected &#34;contains text &#39;Admin, Employee, HiringManager, InterviewPanel&#39;&#34; but got: &#34;does not contain &#39;Admin, Employee, HiringManager, InterviewPanel&#39;&#34; (5189ms)">    at View Profile Automation (C:\Users\testuser\AutomationTesting\LCP_Testing\testLCP.js:81:17)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="Project App" classname="LCP_Testing.testLCP">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Create New Project" classname="LCP_Testing.testLCP">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Getting Project Details" classname="LCP_Testing.testLCP">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Adding New Sprint" classname="LCP_Testing.testLCP">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Attendance In-Out Function" classname="LCP_Testing.testLCP">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Leave Request Functionality" classname="LCP_Testing.testLCP">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="payrollFunction" classname="LCP_Testing.testLCP">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,28 @@
+{
+    "openPage" :{
+        "url": "https://www.zoho.com/en-in/crm/",
+        "title": "Zoho CRM | Top-rated Sales CRM Software by Customers"
+    },
+    "signIp":{
+        "signInLink": "(//a[text()='Sign In'])[1]",
+        "emailSign":"#login_id",
+        "nextButton":"(//button[@class='btn blue'])[2]",
+        "passwordField":"#password",
+        "signinButton":"(//span[text()='Sign in'])[2]"
+    },
+    "Homesearch":{
+        "searchBar":"#searchInput"
+    },
+    "Leads":{
+        "createLead":"//button[text()='Create Lead']"
+    },
+    "CreateLeads":{
+        "company":"//input[@aria-labelledby='Crm_Leads_COMPANY_label']",
+        "FnDrpdownmenu":"(//lyte-icon[@class='dropdown'])[2]",
+        "FnDrp":"//lyte-drop-item[text()='Ms.']",
+        "FirstName":"//input[@id='Crm_Leads_FIRSTNAME_LInput']"
+
+    }
+
+
+}

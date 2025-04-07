@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="2">
+
+  <testsuite name="LCP_Testing.addTask"
+    errors="1" failures="0" hostname="" id="" package="LCP_Testing" skipped="0"
+    tests="2" time="111.9" timestamp="">
+  
+    <testcase name="Login Test" classname="LCP_Testing.addTask" time="35.14" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Add new task" classname="LCP_Testing.addTask" time="20.82" assertions="3">
+
+    
+
+    
+
+    
+    <error message="An error occurred while running .click() command on &lt;//a[text()=&#39;Add Task&#39;]&gt;: Timed out while waiting for element &#34;//a[text()=&#39;Add Task&#39;]&#34; with &#34;css selector&#34; to be present for 5000 milliseconds." type="error"><![CDATA[
+    Error
+    at Add new task (C:\Users\testuser\AutomationTesting\LCP_Testing\addTask.js:46:8)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .click() command on &lt;//a[text()=&#39;Add Task&#39;]&gt;: Timed out while waiting for element &#34;//a[text()=&#39;Add Task&#39;]&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;InvalidSelectorError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\addTask.js:46
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     44 |       
+     45 |       .pause(1000)
+     46 |       .click(addtask.addTaskButton) 
+     47 | 
+     48 | 
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

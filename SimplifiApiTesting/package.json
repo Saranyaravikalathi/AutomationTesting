@@ -1,0 +1,17 @@
+{
+  "name": "lcp_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nightwatch/apitesting": "^3.1.4",
+    "nightwatch": "^3.8.1",
+    "supertest": "^7.0.0"
+  }
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="1"
+            tests="1">
+
+  <testsuite name="mainTest"
+    errors="2" failures="1" hostname="" id="" package="mainTest" skipped="0"
+    tests="1" time="96.86" timestamp="">
+  
+    <testcase name="Login Page Tests" classname="mainTest" time="48.43" assertions="9">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;//small[text()=&#39;Employee Name&#39;]/following-sibling::p&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5160ms)">    at module.exports (C:\Users\testuser\AutomationTesting\LCP_Testing\testViewProfilePage.js:20:12)
+    at Login Page Tests (C:\Users\testuser\AutomationTesting\LCP_Testing\mainTest.js:24:5)</failure>
+<system-out>[[ATTACHMENT|C:\Users\testuser\AutomationTesting\reports\ss\mainTest\Login-Page-Tests_FAILED_Feb-25-2025-171617-GMT+0530.png]]</system-out>
+    
+    <error message="Timed out while waiting for element &lt;//small[text()=&#39;Employee Name&#39;]/following-sibling::p&gt; to be present for 5000 milliseconds. - expected [32m&#34;visible&#34;[39m but got: [31m&#34;not found&#34;[39m [90m(5160ms)[39m" type="error"><![CDATA[
+    Error
+    at module.exports (C:\Users\testuser\AutomationTesting\LCP_Testing\testViewProfilePage.js:20:12)
+    at Login Page Tests (C:\Users\testuser\AutomationTesting\LCP_Testing\mainTest.js:24:5)
+    at Context.call (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\context.js:528:43)
+    at TestCase.run (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+    at Runnable.__runFn (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\index.js:839:80)
+    at Runnable.run (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.executeRunnable (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\index.js:1000:49)
+    at TestSuite.handleRunnable (C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\index.js:1015:33)
+    at C:\Users\testuser\AutomationTesting\node_modules\nightwatch\lib\testsuite\index.js:839:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .setValue() command on &lt;//input[@placeholder=&#39;Search by Employee ID&#39;]&gt;: Timed out while waiting for element &#34;//input[@placeholder=&#39;Search by Employee ID&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\mainTest.js:24
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     22 |     });
+     23 |     browser.pause(5000)
+     24 |     viewPageTestCases(browser); 
+     25 |       }
+     26 |   }
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;//a[@class=&#39;flex size-6 items-center justify-center rounded-full bg-primary text-white hover:bg-white hover:text-primary&#39;]&gt;: Timed out while waiting for element &#34;//a[@class=&#39;flex size-6 items-center justify-center rounded-full bg-primary text-white hover:bg-white hover:text-primary&#39;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\testuser\AutomationTesting\LCP_Testing\mainTest.js:24
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     22 |     });
+     23 |     browser.pause(5000)
+     24 |     viewPageTestCases(browser); 
+     25 |       }
+     26 |   }
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

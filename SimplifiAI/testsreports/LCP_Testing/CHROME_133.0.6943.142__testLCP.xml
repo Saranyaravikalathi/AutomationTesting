@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="8">
+
+  <testsuite name="LCP_Testing.testLCP"
+    errors="0" failures="0" hostname="" id="" package="LCP_Testing" skipped="0"
+    tests="8" time="84.52" timestamp="">
+  
+    <testcase name="Checking if input fields are visible" classname="LCP_Testing.testLCP" time="13.79" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Attempting login with empty fields" classname="LCP_Testing.testLCP" time="2.700" assertions="0">
+    </testcase>
+  
+    <testcase name="Attempting login with an invalid email" classname="LCP_Testing.testLCP" time="3.701" assertions="0">
+    </testcase>
+  
+    <testcase name="Attempting login with incorrect credentials" classname="LCP_Testing.testLCP" time="2.084" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Attempting successful login" classname="LCP_Testing.testLCP" time="6.923" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="View Profile Automation" classname="LCP_Testing.testLCP" time="4.896" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Project App" classname="LCP_Testing.testLCP" time="2.100" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Create New Project" classname="LCP_Testing.testLCP" time="6.058" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,134 @@
+{
+    "url":"https://dev2.lcp.neartekpod.io/",
+    "LoginPage":{
+        "userName":"//input[@id='username']",
+        "password":"//input[@name='password']",
+        "submitButton":"//button[@type='submit']",
+        "dashboardHeader":"(//h1[@class='mb-0.5 text-heading-6 font-bold text-dark dark:text-white'])[1]",
+        "errorMessage":"//span[@id='error-element-password']"
+    },
+    "Lcpmenu":{
+        "menu":"//span[contains(@class, 'rotate-45')]",
+        "urlView":"https://dev2.lcp.neartekpod.io/",
+        "crmpage":"//a[@href='/empcrm']"
+        
+    },
+    "viewProfilePage":{
+        "viewdrpDown":"//span[@class='hidden lg:block']",
+        "viewClick":"//a[@href='/profile']",
+        "officialDetails": {
+            "off_Name":"(//small[@class='font-semibold text-dark dark:text-white']//following-sibling::p)[2]",
+            "off_Role":"(//small[@class='font-semibold text-dark dark:text-white']//following-sibling::p)[3]",
+            "emp_no":"(//small[@class='font-semibold text-dark dark:text-white']//following-sibling::p)[1]",
+            "emp_email":"(//small[@class='font-semibold text-dark dark:text-white']//following-sibling::p)[4]",
+            "report_manager":"(//small[@class='font-semibold text-dark dark:text-white']//following-sibling::p)[6]",
+            "assignment":"(//small[@class='font-semibold text-dark dark:text-white']//following-sibling::p)[7]",
+            "joining_date":"(//small[@class='font-semibold text-dark dark:text-white']//following-sibling::p)[8]",
+            "phone":"(//small[@class='font-semibold text-dark dark:text-white']//following-sibling::p)[5]",
+            "address":"(//small[@class='font-semibold text-dark dark:text-white']//following-sibling::p)[9]"
+
+        } 
+    },
+    "ProjectApp":{
+        "projectDrp":"//a[@href='/projects/projects-sprintboard']",
+        "noProject":"//p[text()='No projects found.']",
+        "noSprint":"//div[contains(text(),'No Sprint found')]",
+        "addSprint":"//a[@href='/projects/NewTask/add?projectid=undefined&sprintid=']",
+        "newProject":{
+            "projectUrl":"//a[@href='/projects']",
+            "addProject":"//a[@href='/projects/NewProject/add']",
+            "addprojectText":"//a[text()='Add Project']",
+            "projectName":"//input[@placeholder='Enter your Project Name']",
+            "startDate":"//input[@label='Start Date']",
+            "projectManager":"(//button[@type='button'])[1]",
+            "managerName":"//option[text()='Saranya Ravikalathi']",
+            "endDate":"//input[@label='End Date']",
+            "teamMember":"//*[@id='teamMembers']",
+            "optionteamno":"//*[@id='teamMembers']/option[3]",
+            "cancelButton":"//button[@class='flex items-center gap-2 rounded bg-gray-300 px-3 py-2 font-medium text-gray-800 hover:bg-gray-400 hover:shadow-1']",
+            "saveButton":"//button[@type='submit']",
+            "errormessage":"//div[text()='Project name already exists. Please enter a different project name.']"
+        },
+        "getProjectDetails": {
+            "drpSelectProject":"//select[@id='projectDropdown']",
+            "selectname":"//*[@id='projectDropdown']/option[text()='lcp demo']",
+            "viewprojectDetails":"//a[@href='/projects/projectinfo?projectid=18e47430-d89a-4eaf-a7b2-e83296fe3132']",
+            "projectName":"(//small[@class='font-semibold text-dark dark:text-white']/following-sibling::p)[1]",
+            "startDate":"(//small[@class='font-semibold text-dark dark:text-white']/following-sibling::p)[2]",
+            "projectmangaer":"(//small[@class='font-semibold text-dark dark:text-white']/following-sibling::p)[3]",
+            "projectteammem":"(//small[@class='font-semibold text-dark dark:text-white']/following-sibling::p)[4]"
+        },
+        "newTask":{
+            "addtaskUrl":"https://dev2.lcp.neartekpod.io/projects/projects-sprintboard",
+            "addTask":"//a[@href='/projects/NewTask/add?projectid=undefined&sprintid=']",
+            "selectProject":"select#projectDropdown",
+            "selectSprint":"select#sprintDropdown",
+            "selectMembers":"select#teamMembers",
+            "addTaskButton":"body > div.flex.h-screen.overflow-hidden > div.relative.flex.flex-1.flex-col.overflow-y-auto.overflow-x-hidden > main > div > div.mb-4.flex.items-center.justify-between > div.flex.space-x-2 > a:nth-child(2)",
+            "projectName":"(//input[@type='text'])[2]",
+            "taskNo":"(//input[@type='text'])[3]",
+            "taskName":"/html/body/div[1]/div[2]/main/div/div[2]/div/div/form/div/div[2]/div[1]/div/input",
+            "assignTo":"(//button[@type='button']/span[text()='Saranya Ravikalathi (saranya.ravikalathi@neartekpod.com)'])[1]",
+            "taskStartDate":"//input[@label='Planned Start Date']",
+            "taskEndDate":"//input[@label='Planned End Date']",
+            "status":"//button[@type='button']/span[text()='InProgress']",
+            "priority":"//button[@type='button']/span[text()='High']",
+            "reporter":"(//button[@type='button']/span[text()='Saranya Ravikalathi (saranya.ravikalathi@neartekpod.com)'])[2]",
+            "issueType":"//button[@type='button']/span[text()='Story']"
+        },
+        "SprintBoard":{
+            "sprintUrl":"https://dev2.lcp.neartekpod.io/projects/sprint",
+            "textSprint":"//a[text()='Sprint-Board']",
+             "addsprint":"//a[text()='Add Sprint']",
+             "sprintStartDate":"//input[@placeholder='Enter start date']",
+             "sprintEndDate":"//input[@placeholder='Enter end date']",
+             "sprinttaskBox":"//div[@class='css-19bb58m']",
+             "sprintaskName":"//div[@class='css-19bb58m']",
+             "sprintSavebtn":"//span[text()='Save']",
+             "sprintCancelbtn":"//button[text()='Cancel']"
+        }
+    },
+    "Expense":{
+        "expenseUrl":"https://dev2.lcp.neartekpod.io/expense",
+        "expenseStartDate":"(//input[@class='w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400'])[1]",
+        "expenseEnddate":"(//input[@class='w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400'])[2]",
+        "expenseType":"//select[@name='expenseType']/option[text()='Food']",
+        "addExpensebtn":"//a[text()='Add New']"
+
+    },
+    "CRM":{
+        "crmAddButton":"//a[@href='/newCrm]",
+        "crmFirstName":"//input[@placeholder='Enter your First Name']",
+        "crmLastName":"//input[@placeholder='Enter your Last Name']",
+        "crmEmail":"//input[@placeholder='Enter your Email']",
+        "crmPhoneNumber":"//input[@placeholder='Enter your Phone Number']",
+        "crmStatus":"//input[@placeholder='Status']",
+        "crmOrgUrl":"//input[@placeholder='Enter your OrganizationUrl']"
+
+    },
+    
+    "emplyeeDetails":{
+        "addEmployee":"//a[@href='/employee/newemployee/add']",
+        "employeeXpath":"//a[@href='/employee/employeedetails']",
+        "infoEmplyee":"//a[@class='flex size-6 items-center justify-center rounded-full bg-primary text-white hover:bg-white hover:text-primary']",
+        "editEmployee":"//span[@class='text-sm font-medium ']",
+        "employeeName":"//input[@placeholder='Employee Name']",
+        "employeeRoledrpdown":"//div[@class='css-w6jo55']",
+        "employeeNo":"//input[@placeholder='Enter your Employee No']",
+        "address":"//input[@placeholder='Enter your Address']",
+        "Phone":"//input[@value='+91']",
+        "email":"//input[@placeholder='Enter your Email']",
+        "editSave":"//button[@type='submit']",
+        "editCancel":"//button[@type='button']"
+    },
+    "viewEmployeeDetails":{
+        "searchEmployee":"//input[@placeholder='Search by Employee Name or ID']",
+        "getName":"//small[text()='Employee Name']/following-sibling::p",
+        "getRole":"//small[text()='Role']/following-sibling::p",
+        "getEmployeeNo":"//small[text()='Employee No']/following-sibling::p",
+        "getPhone":"//small[text()='Phone']/following-sibling::p",
+        "getEmail":"//small[text()='Email']/following-sibling::p",
+        "getAddress":"//small[text()='Address']/following-sibling::p"
+
+    }
+}

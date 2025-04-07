@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="testLoginPage"
+    errors="1" failures="0" hostname="" id="" package="testLoginPage" skipped="8"
+    tests="0" time="0.001000" timestamp="">
+  
+
+  
+    <system-err>
+       An error occurred while creating a new GeckoDriver session: [UnsupportedOperationError] newSession: 
+    </system-err>
+  
+
+    
+    <error message="An error occurred while creating a new GeckoDriver session: [UnsupportedOperationError] newSession: "><![CDATA[
+      UnsupportedOperationError: An error occurred while creating a new GeckoDriver session: [UnsupportedOperationError] newSession: 
+    at parseHttpResponse (C:\Users\testuser\AutomationTesting\node_modules\selenium-webdriver\lib\http.js:529:11)
+    at Executor.execute (C:\Users\testuser\AutomationTesting\node_modules\selenium-webdriver\lib\http.js:446:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Checking if input fields are visible" classname="testLoginPage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Attempting login with empty fields" classname="testLoginPage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Attempting login with an invalid email" classname="testLoginPage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Attempting login with incorrect credentials" classname="testLoginPage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Attempting successful login" classname="testLoginPage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="View Profile Automation" classname="testLoginPage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Project App" classname="testLoginPage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Create new project" classname="testLoginPage">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

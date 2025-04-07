@@ -1,0 +1,43 @@
+{
+    "login": {
+        "url":"https://dev2.lcp.neartekpod.io",
+        "username_Xpath":"//input[@name='username']",
+        "username":"iswarya.dinesh@neartekpod.com",
+        "password_Xpath":"//input[@name='password']",
+        "password":"Qwerty@123",
+        "submit_btn":"//button[@type='submit']",
+        "menuIcon":"//button[@aria-controls='sidebar']"
+        },
+        "Attendance": {
+        "menu": "//a[text()='Attendance']",
+        "checkInButton": "(//button[@class='bg-primary text-white p-2 rounded-full'])[3]",
+        "checkInTime": "(//input[@placeholder='HH:MM'])[1]",
+        "checkOutTime": "(//input[@placeholder='HH:MM'])[2]",
+        "saveButton": "//button[@class='px-6 py-2 bg-primary text-white rounded-md hover:bg-opacity-90 transition-all duration-300']",
+        "successMessage": "//div[contains(text(),'Attendance saved')]"
+    },
+ 
+    "Leave": {
+        "attendance1":"(//a[text()='Attendance'])[1]",
+        "myLeaves": "//button[text()='My Leaves']",
+        "applyLeave": "//button[@class='rounded-md bg-primary px-6 py-2.5 text-white hover:bg-opacity-90 flex items-center']",
+        "fromDate": "(//div[@class='react-datepicker__input-container'])[1]",
+        "toDate": "(//div[@class='react-datepicker__input-container'])[2]",
+        "leaveType": "//input[@placeholder='Select Leave Type']",
+        "selectLeaveType": "//li[text()='Sick Leave']",
+        "reason": "//textarea[@placeholder='Enter your reason for leave']",
+        "submit_btn": "//button[@type='submit']"
+       
+    },
+    "payroll":{
+        "payroll_btn":"(//a[text()='Payroll'])[1]",
+        "AdminField":"//button[text()='Admin']",
+        "searchBox":"//input[@placeholder='Search by ID or Name']",
+        "plusIcon":"(//button[@class='flex size-6 items-center justify-center rounded-full border border-primary bg-primary text-white hover:bg-white hover:text-primary'])[1]",
+        "designation":"//input[@name='designation']",
+        "basicSalary":"//input[@name='basic']",
+        "Allowance":"//input[@name='otherAllowance']",
+        "generate_btn":"//button[text()='Generate']"
+ 
+    }
+}

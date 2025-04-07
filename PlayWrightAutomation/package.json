@@ -1,0 +1,20 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.13"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "imap-simple": "^5.1.0",
+    "mailparser": "^3.7.2",
+    "playwright": "^1.51.1"
+  }
+}
